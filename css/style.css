@@ -313,6 +313,12 @@ li > a:only-child:after {
   }
 }
 
+@media (max-width: 400px) {
+  #header-text {
+    font-size: 40px;
+  }
+}
+
 /*-- popup --*/
 
 .overlay {
