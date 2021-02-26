@@ -4,7 +4,14 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
-
+@font-face {
+  font-family: 'Fjalla One';
+  src: url(FjallaOne-Regular.ttf);
+}
+@font-face {
+  font-family: 'Monitoric Regular';
+  src: url(monitorica.regular.otf);
+}
 html {
   scroll-behavior: smooth;
 }
@@ -13,7 +20,7 @@ body {
   margin: 0;
   background: #fff;
   position: relative;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Fjalla One';
 }
 body a {
   transition: 0.5s all;
@@ -343,11 +350,11 @@ li > a:only-child:after {
 
 .popup {
   background: #fff;
-  border-radius: 5px;
+  border-radius: 15px;
   max-width: 650px;
   position: relative;
   margin: 8em auto;
-  padding: 3em 1em;
+  padding: 3em 3em 3em 3em;
 }
 .popup p {
   font-size: 15px;
@@ -1332,4 +1339,53 @@ textarea {
 }
 [type='submit']:hover {
   background: #ffffff;
+}
+
+/*Slideshow container*/
+.slideshow-container {
+  position: relative;
+  background: #0a8ea0;
+}
+
+/*Slides*/
+.mySlides {
+  display: none;
+  padding: 40px;
+  text-align: center;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  background: #0a8ea0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 45px;
+  width: 45px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active1,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {
+  font-style: italic;
+  font-size: 25px;
+}
+
+/* Add a blue color to the author */
+.author {
+  color: rgb(1, 72, 204);
 }
