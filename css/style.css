@@ -66,6 +66,9 @@ img {
   width: 100%;
 }
 
+.small {
+  font-variant: small-caps !important;
+}
 /* header */
 
 /*-- //header --*/
